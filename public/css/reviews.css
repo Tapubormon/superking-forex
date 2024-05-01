@@ -1,0 +1,118 @@
+.review-srcshot{
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+
+.image-wraper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+}
+
+.grid-img{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .3s ease;
+}
+
+.grid-img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*####################################################*/
+/*modal section*/
+/*####################################################*/
+
+.popup-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    display: none;
+}
+
+.popup-img span{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 270px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .popup-img img{
+        width: 95%;
+    }
+
+    .review-srcshot{
+        padding-top: 2rem;
+    }
+
+    .image-wraper{
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 45;
+        grid-column-gap: 15px;
+    }
+}
+
+
+/* Media breakpoint */
+
+@media (max-width:1200px){
+    
+    .image-wraper{
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 45;
+        grid-column-gap: 15px;
+    }
+    .popup-img img{
+        width: 40%;
+    }
+
+}
+
+
+@media (max-width:576px){
+    .image-wraper{
+        grid-template-columns: auto auto;
+        grid-row-gap: 30px;
+        grid-column-gap: 15px;
+    }
+    .popup-img span{
+        top: 0%;
+        right: 2%
+    }
+    .popup-img img{
+        top: 50%;
+        width: 90%;
+        transform: translate(-50%,-45%);
+    }
+    
+}
+
+
+@media (max-width:375px){
+    .popup-img img{
+        top: 50%;
+        width: 75%;
+    }
+}

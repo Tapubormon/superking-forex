@@ -1,0 +1,243 @@
+.membership{
+  background-image: linear-gradient(to bottom, #0a1c32, #0a192a, #091523, #07101c, #030b15);
+  padding-bottom: 3rem;
+}
+
+.membership_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8rem;
+}
+
+.payment_method{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.membership_title h4, .payment_method h4{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  position: relative;
+  padding: 0 15px;
+}
+
+.membership_title h4:after, .payment_method h4:after,
+.membership_title h4:before, .payment_method h4:before {
+  background: var(--highlight);
+  border-radius: 50%;
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 10px;
+}
+
+.membership_title h4:after, .payment_method h4:after {
+  left: auto;
+  right: 0;
+}
+
+.membership_title h2, .payment_method h2 {
+  font-size: 2.625rem;
+  color: #ffffff;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.membership_title h2 span, .payment_method h2 span {
+  color: var(--highlight);
+}
+
+
+
+/* ========================== */
+
+.wrapper {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  color: aliceblue;
+}
+.pricing-table {
+  border: 1px solid hsla(0, 0%, 100%, 0.04);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+  position: relative;
+  background-color: #0b1d33;
+}
+.pricing-table .head {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+  transition: all 0.5s ease;
+}
+.pricing-table:hover .head {
+  border-bottom: 1px solid #8e2de2;
+}
+
+.pricing-table .head .title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricing-table .content .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  line-height: 90px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: -50px;
+  transition: all 0.5s ease;
+}
+.pricing-table:hover .content .price {
+  transform: scale(1.2);
+}
+.pricing-table .content .price h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.pricing-table .content ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+.pricing-table .content ul li {
+  margin: 10px 0px;
+  font-size: 14px;
+  color: aliceblue;
+}
+
+.pricing-table .content .sign-up {
+  background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+  border-radius: 40px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.pricing-table .btn {
+  color: #fff;
+  padding: 14px 40px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  border: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+  margin: 2px;
+  z-index: 2;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.pricing-table .btn:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-table .btn.bordered {
+  color: #333;
+}
+.pricing-table:hover .btn.bordered {
+  color: #fff !important;
+}
+
+.pricing-table .btn.bordered:after {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+.pricing-table:hover .btn.bordered:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ++++++++++++++++++++++
+=====================
+++++++++++++++++++++++ */
+
+/* payment slider */
+.stripe, .stripe2{
+  overflow: hidden;
+  width: 100%;
+}
+
+.cnt{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.slider_img{
+  width: 12rem;
+  height: 7rem;
+  background-position: center;
+  background-size: cover;
+  /* box-shadow:0 2px 8px rgba(0,0,0,0.25); */
+  padding: 5px;
+  padding-top: 15px;
+}
+
+
+.elem, .elem2{
+  /* display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 20px; */
+  padding: 0 0.5rem;
+
+}

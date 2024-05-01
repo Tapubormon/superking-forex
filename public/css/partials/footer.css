@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+
+.footer{
+    background-image: linear-gradient(to top, #0a1c32, #0a192a, #091523, #07101c, #030b15);
+}
+
+.footer-wraper{
+    padding-top: 5rem;
+}
+
+.footer-wraper .footer-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 6rem 4rem;
+    margin-bottom: 6rem;
+    background-image: linear-gradient(to right, #030b15, #07101c, #091523, #0a192a, #0a1c32);
+    border: 1px solid hsla(0, 0%, 100%, .04);
+    border-radius: 5px;
+
+}
+
+.boker-title-msg{
+    font-family: "Rubik",Helvetica,Arial,Lucida,sans-serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+.footer_title_link{
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.list-group li{
+    list-style-type: none;
+    text-align: left;
+}
+
+.list-group li a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: #a4b4c3;
+    transition: all .3s ease;
+}
+
+.list-group li a:hover{
+    color: #ffffff;
+}
+
+.social-icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-icon img{
+    width: 40px;
+    background: #fff;
+    border: 1px solid rgb(112, 110, 110);
+    border-radius: 50%;
+}
+
+.copyright{
+    background-image: linear-gradient(to top, #172d47, #1c3653, #19324e, #172b46, #152e4d);
+    padding: 0.5rem 0;
+}
+
+.copyright h3{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+    width: 100%;
+}
