@@ -1,3 +1,4 @@
+@import url("bootstrap.min.css");
 @import url("nav.css");
 @import url("features_card.css");
 @import url("membership.css");
@@ -7,6 +8,7 @@
 @import url("error.scss");
 @import url("partials/glowly_btn.css");
 @import url("partials/footer.css");
+
 
 :root{
     --highlight : #00C4F4;
