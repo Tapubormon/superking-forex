@@ -1,6 +1,7 @@
 const express = require('express')
 const ejs = require('ejs')
 const path = require('path');
+require('dotenv').config();
 
 
 const app = express()
@@ -12,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 const PORT = process.env.PORT || 3000;
+// const PORT = 3000 || process.env.PORT ;
 
 
 app.get("/", function(req, res) {
@@ -37,3 +39,4 @@ app.get('*', (req, res) => {
 app.listen(PORT, function(){
     console.log("Server is running on port "+ PORT)
 })
+
